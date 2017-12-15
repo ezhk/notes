@@ -1,7 +1,7 @@
 # Create RPM package
 - install depencies:
 
-        $ yum install rpmdevtools rpm-build
+        # yum install rpmdevtools rpm-build
 
 - prepare build directory:
 
