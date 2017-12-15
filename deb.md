@@ -28,9 +28,9 @@ Create our test package:</br>
 
         test_file /test
 
-- remove source directory:
+- remove source directory and ex-files:
 
-        $ rm -r debian/source
+        $ rm -r debian/source debian/*.ex
 
 - build our package:
 
