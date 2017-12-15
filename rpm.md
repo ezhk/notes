@@ -1,13 +1,13 @@
 # Create RPM package
-Install depencies:
+- install depencies:
 
     $ yum install rpmdevtools rpm-build
 
-Prepare build directory:
+- prepare build directory:
 
     $ mkdir rmpbuild && cd rmpbuild
 
-Init default RPM struct:
+- init default RPM struct:
 
     $ rpmdev-setuptree
 
@@ -15,7 +15,7 @@ you might create directories as alternative :
 
     $ mkdir {BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
-Create our test spec file:
+- create our test spec file:</br>
 -> _SPECS/test.spec_:
 
     Name:           test
@@ -45,16 +45,16 @@ Create our test spec file:
     * Fri Dec 15 2017 Andrey Kiselev <MYMAIL_HERE> 0.1
     - test build
 
-Create source tarball with files:
+- create source tarball with files:
 
     $ mkdir test-0.1 && echo 'test' >test-0.1/test_file
     $ tar zcvf SOURCES/test.tar.gz test-0.1/
 
-Build our package:
+- build our package:
 
     $ rpmbuild -v -ba SPECS/test.spec
 
-Enjoy:
+- enjoy:
 
     $ find . -type f
     ./RPMS/x86_64/test-0.1-1.el7.centos.x86_64.rpm
