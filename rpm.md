@@ -16,7 +16,7 @@ you might create directories as alternative :
     $ mkdir {BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
 Create our test spec file:
-- edit SPECS/test.spec:
+-> _SPECS/test.spec_:
 
     Name:           test
     Version:        0.1
