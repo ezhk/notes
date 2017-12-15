@@ -1,4 +1,4 @@
-# Create RPM package
+# Create DEB package
 
 - install depencies:
 
