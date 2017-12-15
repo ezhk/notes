@@ -24,9 +24,8 @@ Create our test package:</br>
 
         $ echo 'test' >test_file
 
-- installation description:</br>
+—> debian/install:
 
-        $ vim debian/install
         test_file /test
 
 - remove source directory:
