@@ -13,7 +13,7 @@
         $ dh_make -c gpl -s -p test_0.1 --createorig
 
 Create our test package:</br>
--> changelog:
+~> changelog:
 
         $ dch -i
         test (0.1) UNRELEASED; urgency=medium
@@ -24,7 +24,7 @@ Create our test package:</br>
 
         $ echo 'test' >test_file
 
-—> debian/install:
+~> debian/install:
 
         test_file /test
 
