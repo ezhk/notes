@@ -3,7 +3,7 @@ Install depencies:
 
     $ yum install rpmdevtools rpm-build
 
-Prepate build directory:
+Prepare build directory:
 
     $ mkdir rmpbuild && cd rmpbuild
 
@@ -11,12 +11,12 @@ Init default RPM struct:
 
     $ rpmdev-setuptree
 
-as alternative you might create directories:
+you might create directories as alternative :
 
     $ mkdir {BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
-Create our test package:
-- edit SPECS/test.spec like a file:
+Create our test spec file:
+- edit SPECS/test.spec:
 
     Name:           test
     Version:        0.1
@@ -45,7 +45,7 @@ Create our test package:
     * Fri Dec 15 2017 Andrey Kiselev <MYMAIL_HERE> 0.1
     - test build
 
-Create source tarball:
+Create source tarball with files:
 
     $ mkdir test-0.1 && echo 'test' >test-0.1/test_file
     $ tar zcvf SOURCES/test.tar.gz test-0.1/
